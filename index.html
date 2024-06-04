@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Password</title>
+  </head>
+
+  <body>
+    <div class="main">
+      <h1>Random Password Generator</h1>
+      <div class="container">
+        <div class="putdata">
+          <input type="text" id="text" name="text" />
+        </div>
+        <div class="seperateContainer">
+          <label for="#rangeSet">Set You Range : </label>
+          <input type="number" name="number" id="rangeSet" max="99" min="0" />
+        </div>
+        <div class="seperateContainer">
+          <label for="#uppercase">Include Uppercase : </label>
+          <input
+            class="ancent"
+            type="checkbox"
+            name="uppercase"
+            id="uppercase"
+          />
+        </div>
+
+        <div class="seperateContainer">
+          <label for="#lowercase">Include Lowercase : </label>
+          <input
+            class="ancent"
+            type="checkbox"
+            name="lowercase"
+            id="lowercase"
+          />
+        </div>
+
+        <div class="seperateContainer">
+          <label for="numbers">Include Numbers : </label>
+          <input class="ancent" type="checkbox" name="number" id="numbers" />
+        </div>
+
+        <div class="seperateContainer">
+          <label for="#symbol">Include Symbols : </label>
+          <input class="ancent" type="checkbox" name="symbol" id="symbol" />
+        </div>
+        <button id="buttonClick">Get...</button>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
